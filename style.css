@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.nav h1 {
+  font-size: 30px;
+}
+
+.nav-item {
+  margin-left: 5vw;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+}
+
+.input {
+  margin: 20px 0 20px 20px;
+}
+
+.list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.basket {
+  background-color: #c4c4c4;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.basket-p {
+  margin: 20px 84vw 20px 0;
+}
+
+.basket-box {
+  width: 90%;
+  height: 25vw;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+.list-div {
+  border: 1px solid black;
+  margin: 20px;
+  background-color: #c4c4c4;
+}
+
+.list-item-img {
+  width: 300px;
+  height: 250px;
+}
+
+.list-item-title {
+  margin: 5px;
+}
+
+.list-item-sub-title {
+  margin: 5px;
+}
+
+.list-item-price {
+  margin: 5px;
+}
+
+.list-item-button {
+  margin: 5px 5px 10px 5px;
+  width: 60px;
+  height: 25px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+
+.list-item-button:hover {
+  background-color: pink;
+  border: none;
+}
+
+.list-item-button-delete {
+  margin: 5px 5px 10px 5px;
+  width: 60px;
+  height: 25px;
+  background: black;
+  color: white;
+  border-radius: 5px;
+}
+
+.list-item-button-delete:hover {
+  background-color: white;
+  color: black;
+  border: none;
+}
+
+.basket-box-p {
+  display: flex;
+}
+
+.button-calculate {
+  margin: 20px 0 20px 84vw;
+  border-radius: 10px;
+  width: 60px;
+  height: 30px;
+  background-color: black;
+  color: white;
+}
+
+.button-calculate:hover {
+  border: none;
+  background-color: white;
+  color: black;
+}
