@@ -21,7 +21,9 @@
       </div>
     </div>
 
-    <div class="input"><input type="search" placeholder="검색어입력"></div>
+    <div class="input">
+      <input type="text" placeholder="검색어입력" id="value" onkeyup="searchInput()">
+    </div>
     
     <div class="list-item">
       <!-- javaScript -->
@@ -32,8 +34,43 @@
       <div class="basket-box">
         <p class="basket-box-p"> <!-- javaScript --> </p>
       </div>
-    <button class="button-calculate">결제하기</button>
+    <button class="basket-reset-button">RESET</button>
+    <button class="modal-wrap-open">결제하기</button>
     </div>
+
+    <div class="modal-wrap">
+      <div class="modal-body">
+        <div class="modal-wrap-name">
+          <h2>성함</h2>
+          <input type="text" placeholder="성함을 입력해주세요." class="name-value">
+        </div>
+        <div class="modal-wrap-num">
+          <h2>연락처</h2>
+          <input type="text" placeholder="연락처를 입력해주세요." class="num-value">
+        </div>
+        <button class="modal-wrap-complete">제출</button>
+        <button class="modal-wrap-close">닫기</button>
+        <button class="modal-wrap-close2">X</button>
+      </div>
+    </div>
+
+    <div class="payment">
+      <div class="payment-body">
+        <h1>영수증</h1>
+        <div class="today">
+          <div class="date"><!-- javaScript --></div>
+          <div class="time"><!-- javaScript --></div>
+        </div>
+        <div class="name-num-input">
+          <!-- javaScript -->
+        </div>
+        <div class="all-payment">
+          <!--javaScript-->
+        </div>
+        <button class="payment-close">닫기</button>
+      </div>
+    </div>
+
   </div>
 
   <script src="main.js"></script>

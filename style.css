@@ -32,6 +32,10 @@
   margin: 20px 0 20px 20px;
 }
 
+.button-type {
+  width: 50px;
+}
+
 .list-item {
   display: flex;
   justify-content: center;
@@ -53,7 +57,7 @@
 
 .basket-box {
   width: 90%;
-  height: 25vw;
+  height: 30vw;
   background-color: black;
   display: flex;
   align-items: center;
@@ -117,10 +121,11 @@
 
 .basket-box-p {
   display: flex;
+  color: black;
 }
 
-.button-calculate {
-  margin: 20px 0 20px 84vw;
+.modal-wrap-open, .basket-reset-button {
+  margin: 5px 0 15px 84vw;
   border-radius: 10px;
   width: 60px;
   height: 30px;
@@ -128,8 +133,165 @@
   color: white;
 }
 
-.button-calculate:hover {
+.basket-reset-button {
+  background-color: red;
+  border: none;
+  color: white;
+}
+
+.modal-wrap-open:hover, .basket-reset-button:hover {
   border: none;
   background-color: white;
   color: black;
+}
+
+.list-item-add-button {
+  margin: 5px 5px 10px 5px;
+  width: 60px;
+  height: 25px;
+  background: black;
+  color: white;
+  border-radius: 5px;
+}
+
+.list-item-count-div {
+  display: flex;
+  gap: 5px;
+}
+
+.list-item-Count {
+  margin: 5px 5px 10px 5px;
+}
+
+.count {
+  margin: 5px 5px 10px 5px;
+  display: flex;
+  gap: 5px;
+}
+
+.count-up, .count-down {
+  width: 20px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+
+.count-up:hover, .count-down:hover {
+  background-color: white;
+  color: black;
+}
+
+.modal-wrap {
+  position: fixed; /* 화면에 고정 */
+  z-index: 1; /* 상위에 위치 */
+  padding-top: 200px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* 반투명한 배경색 */
+  display: none; /* 초기에는 숨김 */
+}
+
+.modal-body {
+  width: 40vw;
+  height: 20vw;
+  padding: 30px 30px;
+  margin: 0 auto;
+  border: 1px solid #777;
+  background-color: white;
+}
+
+.modal-wrap-name, .modal-wrap-num {
+  margin-bottom: 20px;
+}
+
+.modal-wrap-name input, .modal-wrap-num input {
+  width: 200px;
+  height: 30px;
+}
+
+.modal-wrap-complete, .modal-wrap-close {
+  width: 70px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.modal-wrap-complete:hover, .modal-wrap-close:hover {
+  background-color: black;
+  color: white;
+}
+
+.modal-wrap-close2 {
+  position: relative;
+  left: 29vw;
+  bottom: 10vw;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.modal-wrap-close2:hover {
+  background-color: black;
+  color: white;
+}
+
+.payment {
+  position: fixed; /* 화면에 고정 */
+  z-index: 1; /* 상위에 위치 */
+  padding-top: 200px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* 반투명한 배경색 */
+  display: none; /* 초기에는 숨김 */
+}
+
+.payment-body {
+  width: 50vw;
+  height: 23vw;
+  padding: 30px 30px;
+  margin: 0 auto;
+  border: 1px solid #777;
+  background-color: white;
+}
+
+.payment-close {
+  width: 40px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.payment-close:hover {
+  background-color: black;
+  color: white;
+}
+
+.today {
+  display: flex;
+  gap: 20px;
+}
+
+.name-num-input {
+  margin-top: 20px;
+}
+
+.all-payment {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.payment-detail {
+  margin-top: 20px;
+}
+
+.payment-detail-money {
+  margin-top: 20px;
 }
